@@ -1,0 +1,12 @@
+$k = 10,12,14,0,-1,-10,5
+for($i=0;$i -lt $k.Length;$i++)
+{
+    if($k[$i] -gt 3)
+    {
+    $k[$i].ToString() + " jest większa/e niż 3";
+    }
+    else
+    {
+    $k[$i].ToString() + " jest mniejsza/e niż 3";
+    }
+}
