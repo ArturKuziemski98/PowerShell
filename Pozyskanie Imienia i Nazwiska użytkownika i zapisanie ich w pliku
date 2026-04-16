@@ -1,11 +1,11 @@
-$imie = Read-Host "Jak masz na imię?"; //pobranie imienia
-$nazwisko = Read-Host "Jak masz na nazwisko?" //pobranie nazwiska
-if(Test-Path 'C:\Users\a.kuziemski.NAUKA\Documents\imiona.txt') // sprawdzanie czy plik 'imiona.txt' istnieje
+$imie = Read-Host "Jak masz na imię?"; #pobranie imienia
+$nazwisko = Read-Host "Jak masz na nazwisko?" #pobranie nazwiska
+if(Test-Path 'C:\Users\a.kuziemski.NAUKA\Documents\imiona.txt') #sprawdzanie czy plik 'imiona.txt' istnieje
 {
 "Ten plik już istnieje, dodaję użytkownika"
-Add-Content 'C:\Users\a.kuziemski.NAUKA\Documents\imiona.txt' ($imie +" "+$nazwisko) // jeżeli tak dodanie imienia i nazwiska do pliku
+Add-Content 'C:\Users\a.kuziemski.NAUKA\Documents\imiona.txt' ($imie +" "+$nazwisko) #jeżeli tak dodanie imienia i nazwiska do pliku
 }
-else // jeżeli nie to stworzenie pliku i dodanie imienia i nazwiska użytkownika
+else #jeżeli nie to stworzenie pliku i dodanie imienia i nazwiska użytkownika
 {
 "Tworzę plik i dodaję do niego użytkownika"
 New-Item -Path 'C:\Users\a.kuziemski.NAUKA\Documents\imiona.txt' -ItemType File
