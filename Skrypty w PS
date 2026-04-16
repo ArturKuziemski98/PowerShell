@@ -1,0 +1,75 @@
+Operatory
+
+&plus -> dodawanie
+- -> odejmowanie
+&ast -> mnożenie
+/ -> dzielenie
+% -> modulo
+
+Operatory równości
+
+eq -> równość
+nq -> nie równe
+lt -> mniejsze niż
+le -> mniejsze niż lub równe
+gt -> większe niż
+ge -> większe niż lub równe
+
+Operatory logiczne
+
+AND -> i
+OR -> lub
+NOT -> dodawane przed AND lub OR aby zaprzeczyć
+
+Tablice
+
+[int32[]]$intA = 1500,2230,3350,4000 lub $A= 1,2,3,4,5,6
+
+Pętle
+for
+
+$array = @("Artur", "Kuziemski", "AK")
+ 
+for($i = 0; $i -lt $array.length; $i++){ $array[$i] }
+Artur
+Kuziemski
+AK
+
+foreach
+
+$array = @("Artur", "Kuziemski", "AK")
+foreach ($element in $array) { $element }
+Artur
+Kuziemski
+AK
+
+while
+
+$counter = 0;
+while($counter -lt $array.length){
+   $array[$counter]
+   $counter += 1
+}
+
+Operacje warunkowe
+
+if
+
+if(warunek){
+   gdy jest spełniony
+}
+else
+{
+gdy nie jest spełniony
+}
+
+switch
+
+$k=3
+switch(k){
+   1 {"One"}
+   2 {"Two"}
+   3 {"Three"}
+   4 {"Four"}
+   3 {"Three Again"}
+}
