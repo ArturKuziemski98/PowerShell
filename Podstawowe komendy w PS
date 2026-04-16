@@ -1,0 +1,12 @@
+Tworzenie folderu -> New-Item -Path 'D:\user\Test Folder' -ItemType Directory
+Tworzenie pliku -> New-Item -Path 'D:\user\Test Folder\Test File.txt' -ItemType File
+Kopiowanie folderu lub pliku -> Copy-Item 'ścieżka z' 'ścieżka do'
+Usuwanie pliku lub folderu -> Remove-Item 'ścieżka'
+Przenoszenie folderu lub pliku -> Move-Item ścieżka_z ścieżka_do
+Zmiana nazwy pliku lub folderu -> Rename-Item ścieżka_pliku/folder nowa_nazwa
+Sprawdź datę i godzinę -> Get-Date
+Tworzenie pliku -> New-Item ścieżka_+rozszeżenie_pliku(.txt/.csv/.html/.xml)
+Zawartość pliku -> Get-Content ścieżka
+Usuwanie zawartości pliku -> Clear-Content ścieżka
+Wpisanie zawartośći do pliku -> Set-Content ścieżka
+Dodanie zawartości do pliku -> Add-Content ścieżka
