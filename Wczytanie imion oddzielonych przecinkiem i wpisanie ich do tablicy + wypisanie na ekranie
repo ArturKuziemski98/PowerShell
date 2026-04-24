@@ -1,0 +1,5 @@
+$tablica = (Get-Content -Path "C:\Users\a.kuziemski.NAUKA\Desktop\imiona.txt.txt") -split ','
+for($i=0;$i -lt $tablica.Length;$i++)
+{
+$tablica[$i];
+}
