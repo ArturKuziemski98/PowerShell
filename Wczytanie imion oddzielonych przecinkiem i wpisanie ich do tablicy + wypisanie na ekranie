@@ -1,5 +1,5 @@
-$tablica = (Get-Content -Path "C:\Users\a.kuziemski.NAUKA\Desktop\imiona.txt.txt") -split ','
-for($i=0;$i -lt $tablica.Length;$i++)
+$tablica = (Get-Content -Path "C:\Users\a.kuziemski.NAUKA\Desktop\imiona.txt.txt") -split ',' #wpisanie do tablicy ciagu znakow oddzielonych przecinkiem z pliku imiona.txt.txt
+for($i=0;$i -lt $tablica.Length;$i++) #przejscie po kazdym elemencie tablicy i wypisanie go
 {
 $tablica[$i];
 }
